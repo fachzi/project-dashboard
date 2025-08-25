@@ -5,7 +5,7 @@ import { useAuth } from "../hooks/useAuth";
 
 function ProtectedRoute({ children }) {
   const { isAuthenticated } = useAuth();
-  return isAuthenticated ? children : <Navigate to="/login" replace />;
+  // return isAuthenticated ? children : <Navigate to="/login" replace />;
 }
 
 export default function RoutesRoot() {
@@ -16,9 +16,9 @@ export default function RoutesRoot() {
       <Route
         path="/dashboard"
         element={
-          <ProtectedRoute>
+          // <ProtectedRoute>
             <Dashboard />
-          </ProtectedRoute>
+          // </ProtectedRoute>
         }
       />
       <Route path="*" element={<Navigate to="/login" replace />} />

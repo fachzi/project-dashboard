@@ -2,7 +2,7 @@ import axios from "axios";
 import { storage } from "../utils/storage";
 
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_BASE_URL || "https://api.example.com",
+  baseURL: import.meta.env.VITE_API_BASE_URL || "https://reqres.in/api",
   timeout: 10000,
   headers: { "Content-Type": "application/json" },
 });

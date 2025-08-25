@@ -46,7 +46,6 @@ export default function Login() {
   return (
 
       <div className="flex-1 min-h-screen grid md:grid-cols-2 bg-white">
-        {/* Left image */}
         <div className="hidden md:block">
           <img
             src={bg}
@@ -55,7 +54,6 @@ export default function Login() {
           />
         </div>
 
-        {/* Right form */}
         <div className="flex items-center justify-center p-6 md:p-10">
           <Card className="w-full max-w-md">
             <h1 className="mb-8 text-3xl font-semibold text-slate-800">Login</h1>
