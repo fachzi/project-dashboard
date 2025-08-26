@@ -7,7 +7,7 @@ export default function Sidebar() {
   );
 
   return (
-    <aside className="hidden md:flex h-screen w-56 flex-col border-r bg-white">
+    <aside className="fixed left-0 top-0 h-screen w-40 border-r bg-white z-20">
       <div className="flex items-center gap-3 px-4 py-5">
         <div className="grid h-9 w-9 place-items-center rounded-xl bg-emerald-600 text-white font-semibold">C</div>
         <span className="font-medium text-slate-800">Company</span>
